@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0c97f4c6-b066-407e-be71-07da33d0fd9d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RE4_TEX_TOOL</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Extract.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GCExtract.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IsVersion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)TexData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UhdExtract.cs" />
+  </ItemGroup>
+</Project>
